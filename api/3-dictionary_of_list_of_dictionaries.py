@@ -1,40 +1,49 @@
 #!/usr/bin/python3
-"""
-Module returns information about his/her TO_DO list progress
-when an employee ID is provided as argument.
-"""
+"""Write a Python script that, using this REST API, for a given employee ID,
+returns information about his/her TODO list progress"""
+
 import json
 import requests
-import sys
 
 
-def export_all_to_json():
-    user_response = requests.get('https://jsonplaceholder.typicode.com/users')
-    users_data = user_response.json()
+def get_employee_todo_progress():
+    """Get TODO list progress for all users and save in a JSON file"""
 
-    all_tasks = {}
-    for user in users_data:
-        employee_id = user['id']
-        employee_name = user['name']
+    # Fetch all users
+    url = 'https://jsonplaceholder.typicode.com/users'
+    response = requests.get(url)
 
-        todos_response = requests.get(
-            'https://jsonplaceholder.typicode.com/todos?userId={}'
-            .format(employee_id))
-        todos_data = todos_response.json()
+    if response.status_code == 200:
+        users = response.json()
+        todos_data = {}
 
-        tasks = []
-        for task in todos_data:
-            tasks.append({
-                "username": employee_name,
-                "task": task['title'],
-                "completed": task['completed']
-            })
+        for user in users:
+            user_id = user["id"]
+            username = user["username"]
 
-        all_tasks[employee_id] = tasks
+            # Fetch todos for each user
+            url_todos = (
+                f'https://jsonplaceholder.typicode.com/todos?userId={user_id}')
+            todos_response = requests.get(url_todos)
 
-    with open('todo_all_employees.json', 'w') as jsonfile:
-        json.dump(all_tasks, jsonfile)
+            if todos_response.status_code == 200:
+                todos = todos_response.json()
+
+                # Store todos data for each user
+                todos_data[user_id] = [
+                    {
+                        "username": username,
+                        "task": todo["title"],
+                        "completed": todo["completed"]
+                    }
+                    for todo in todos
+                ]
+
+        # Save combined todos data for all users in a JSON file
+        json_variable = 'todo_all_employees.json'
+        with open(json_variable, 'w') as jsonfile:
+            json.dump(todos_data, jsonfile)
 
 
-if __name__ == "__main__":
-    export_all_to_json()
+if __name__ == '__main__':
+    get_employee_todo_progress()
