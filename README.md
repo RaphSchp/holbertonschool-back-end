@@ -18,8 +18,7 @@ This repository was made to store all directories of my projects, it was made in
 <summary> <strong> 📁 December 18 > December 22 </strong> </summary>
 <br>
 
-* <a href="https://github.com/RaphSchp/holbertonschool-web_front_end/tree/main/html_advanced">html_advanced</a>
-* <a href="https://github.com/RaphSchp/holbertonschool-web_front_end/tree/main/CSS_advanced">CSS_advanced</a>
+* <a href="https://github.com/RaphSchp/holbertonschool-back-end/tree/main/api">API</a>
 
 </details>
 
