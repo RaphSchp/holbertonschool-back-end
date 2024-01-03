@@ -22,14 +22,6 @@ This repository was made to store all directories of my projects, it was made in
 
 </details>
 
-<details>
-<summary> <strong> 📁 January 1 > January 5 </strong> </summary>
-<br>
-
-* <a href="https://github.com/RaphSchp/holbertonschool-back-end/tree/main/python_variable_annotations">python_variable_annotations</a>
-
-</details>
-
 ## :radio_button: Author
 
 * Raphaël Schopfer <a href="https://github.com/RaphSchp" rel="nofollow"><img align="center" alt="github" src="https://www.vectorlogo.zone/logos/github/github-tile.svg" height="24" /></a>
