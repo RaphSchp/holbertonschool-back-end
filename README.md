@@ -8,7 +8,7 @@
 
 ## Description
 
-This is a novice-level web development project where you'll learn to use HTML tags to structure web pages, focusing on semantic elements and essential HTML concepts, without any styling or CSS, it was made in the software development program of [Holberton School](https://www.holbertonschool.fr/).
+This repository was made to store all directories of my projects, it was made in the software development program of [Holberton School](https://www.holbertonschool.fr/).
 
 ## :radio_button: Projects
 
