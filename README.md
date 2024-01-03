@@ -26,7 +26,7 @@ This is a novice-level web development project where you'll learn to use HTML ta
 <summary> <strong> 📁 January 1 > January 5 </strong> </summary>
 <br>
 
-* <a href="https://github.com/RaphSchp/holbertonschool-back-end/tree/main/python_variable_annotations">holbertonschool-web_back_end</a>
+* <a href="https://github.com/RaphSchp/holbertonschool-back-end/tree/main/python_variable_annotations">python_variable_annotations</a>
 
 </details>
 
