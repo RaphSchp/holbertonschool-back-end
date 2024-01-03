@@ -6,7 +6,7 @@
 
 ![UBUNTU](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white) ![PYTHON](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
 
-## Description
+## :radio_button: Description
 
 This repository was made to store all directories of my projects, it was made in the software development program of [Holberton School](https://www.holbertonschool.fr/).
 
